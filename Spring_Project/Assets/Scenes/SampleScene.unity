@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 227290822}
   - component: {fileID: 227290821}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Sphere_Soft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 1186015701}
   - component: {fileID: 1186015700}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube_Soft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 2142237332}
   - component: {fileID: 2142237331}
   m_Layer: 0
-  m_Name: Sphere (1)
+  m_Name: Player_Rigid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
