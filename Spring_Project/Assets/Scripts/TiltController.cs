@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class TiltController : MonoBehaviour
 {
-    public float moveSpeedY = 15.0f;
-    public float moveSpeedX = 15.0f;
+    public float speed = 10.0f;
 
-    // Update is called once per frame
     void Update()
     {
-        float tiltX = Input.acceleration.x;
-        float tiltZ = Input.acceleration.y;
-
-        transform.position += new Vector3(tiltX * moveSpeedX * Time.deltaTime, 0, tiltZ * moveSpeedY * Time.deltaTime);
+        Vector3 tilt = Input.acceleration;
+        Vector3 moveDirection = new Vector3(tilt.x, 0, tilt.y);
+        transform.position += moveDirection * speed * Time.deltaTime;
     }
 }
