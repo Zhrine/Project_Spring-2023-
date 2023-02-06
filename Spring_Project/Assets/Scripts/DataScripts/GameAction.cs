@@ -11,6 +11,5 @@ public class GameAction : ScriptableObject
     {
         raise.Invoke();
     }
-		
-		
+    
 }

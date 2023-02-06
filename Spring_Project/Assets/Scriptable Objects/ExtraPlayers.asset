@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c71e038b30196744a09112cf2018ad0, type: 3}
-  m_Name: Instancer
+  m_Script: {fileID: 11500000, guid: 1ce4db8d3d6b138428a58247b7107c94, type: 3}
+  m_Name: ExtraPlayers
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
-  spawnerPos: {fileID: 0}

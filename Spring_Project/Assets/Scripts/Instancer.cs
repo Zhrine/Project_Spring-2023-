@@ -3,17 +3,14 @@ using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "InstantiateObject/Instancer")]
 public class Instancer : ScriptableObject
 {
     public GameObject prefab;
     private int num;
-
+    public string targetTag;
+    
     public void CreateInstance()
-    {
-        Instantiate(prefab);
-    }
-    public void CreateInstanceAtSpawner()
     {
         Instantiate(prefab);
     }
@@ -22,6 +19,15 @@ public class Instancer : ScriptableObject
         Instantiate(prefab, obj.value, Quaternion.identity);
     }
     
+    public void CreateInstanceAtSpawner()
+    {
+        GameObject target = GameObject.FindWithTag(targetTag);
+        
+        if (target != null)
+        {
+            GameObject newObject = Instantiate(prefab, target.transform.position, target.transform.rotation);
+        }
+    }
     
     /*
     public void CreateInstanceFromList(Vector3DataList obj)

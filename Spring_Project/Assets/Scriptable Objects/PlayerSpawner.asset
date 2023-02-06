@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fde515e983438514f844386ac423a31b, type: 3}
-  m_Name: SpawnPos
+  m_Script: {fileID: 11500000, guid: 5c71e038b30196744a09112cf2018ad0, type: 3}
+  m_Name: PlayerSpawner
   m_EditorClassIdentifier: 
-  value: {x: 100, y: 100, z: 100}
+  prefab: {fileID: 9093656191048660536, guid: 24fcb7791b9f50a4a915bad193c133fe, type: 3}
+  targetTag: Spawn
