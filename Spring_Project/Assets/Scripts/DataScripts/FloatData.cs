@@ -7,7 +7,7 @@ public class FloatData :ScriptableObject
 {
 
     public float value;
-    public UnityEvent onUpdate, onMinEvent, onMaxEvent;
+    public UnityEvent onUpdate, onMinEvent, onMaxEvent, onCollsionEvent;
     //public so it can be used in unity events
     public void UpdateValue (float num)
     {
@@ -33,5 +33,10 @@ public class FloatData :ScriptableObject
         }
     }
 	
+    public void OnCollisionEnter(Collision other)
+    {
+        onCollsionEvent.Invoke();
+        
+    }
 	
 }

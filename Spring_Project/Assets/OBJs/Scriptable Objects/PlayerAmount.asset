@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ce4db8d3d6b138428a58247b7107c94, type: 3}
-  m_Name: ExtraPlayers
+  m_Name: PlayerAmount
   m_EditorClassIdentifier: 

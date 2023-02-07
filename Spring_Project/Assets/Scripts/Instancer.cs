@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class Instancer : ScriptableObject
 {
     public GameObject prefab;
-    private int num;
+    public int num;
     public string targetTag;
     
     public void CreateInstance()
@@ -28,7 +28,7 @@ public class Instancer : ScriptableObject
             GameObject newObject = Instantiate(prefab, target.transform.position, target.transform.rotation);
         }
     }
-    
+
     /*
     public void CreateInstanceFromList(Vector3DataList obj)
     {
