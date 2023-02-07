@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9093656191048660537}
   - component: {fileID: 9093656191048660533}
   - component: {fileID: 9093656191048660534}
+  - component: {fileID: -486525488247257174}
   m_Layer: 0
   m_Name: Sphere_Soft
   m_TagString: Untagged
@@ -129,3 +130,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeedY: 15
   moveSpeedX: 15
+--- !u!114 &-486525488247257174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9093656191048660536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca99abd8eb77a50438faa200bdf5ee4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEnterEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 112be70919df54e408702993d5c750e4, type: 2}
+        m_TargetAssemblyTypeName: Instancer, Assembly-CSharp
+        m_MethodName: CreateInstanceAtSpawner
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

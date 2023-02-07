@@ -23,7 +23,7 @@ public class FloatData :ScriptableObject
             onMinEvent.Invoke();
         }
     }
-//you can havetwo arguments normall, but unity events needs them to be seperate
+    //you can havetwo arguments normall, but unity events needs them to be seperate
     public void CheckMax (float num)
     {
         if (value >=num)
