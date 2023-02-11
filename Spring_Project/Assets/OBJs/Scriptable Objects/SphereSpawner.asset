@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: SphereSpawner
   m_EditorClassIdentifier: 
   prefab: {fileID: 9093656191048660536, guid: 24fcb7791b9f50a4a915bad193c133fe, type: 3}
+  num: 1
   targetTag: Spawn
